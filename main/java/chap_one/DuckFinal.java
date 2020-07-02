@@ -15,6 +15,12 @@ package chap_one;
  * 1. Encapsulate a family of algorithms into their own set of classes
  * 2. Lets you change the behaviour at runtime
  *
+ * <h2>The Strategy Pattern</h2>
+ * This pattern is called Strategy Pattern:
+ * The Strategy Pattern defines a family of algorithms, encapsulates each one
+ * and makes them interchangeable. Strategy lets the algorithm vary independently
+ * from clients that use it.
+ *
  */
 public abstract class DuckFinal {
     FlyableBehaviour flyableBehaviour;
