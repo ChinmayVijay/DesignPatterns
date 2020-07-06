@@ -1,4 +1,4 @@
-package chap_two;
+package chap_two.initial_impl;
 
 public interface Subject {
     void registerObserver(Observer o);
