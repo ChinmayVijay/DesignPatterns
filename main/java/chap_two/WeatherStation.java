@@ -7,8 +7,12 @@ public class WeatherStation {
         CurrentConditionsDisplay currentConditionsDisplay
                 = new CurrentConditionsDisplay(weatherData);
 
-        weatherData.setMeasurements(80,65,30.4f);
-        currentConditionsDisplay.update(80,65.5f,31.5f);
-        currentConditionsDisplay.display();
+        WeatherStatsDisplay weatherStatsDisplay = new WeatherStatsDisplay(weatherData);
+        ForecastDisplay forecastDisplay = new ForecastDisplay(weatherData);
+        HeatIndexDisplay heatIndexDisplay = new HeatIndexDisplay(weatherData);
+
+
+        weatherData.setMeasurements(85,70,33.2f);
+        weatherData.measurementsChanges();
     }
 }
