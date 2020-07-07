@@ -6,8 +6,10 @@ public class StarbuzzCafe {
 
         Beverage beverage = new Espresso();
 //        System.out.println("The cost for "+beverage.getDescription()+ " is: $"+ beverage.cost());
+        beverage.setSize(Beverage.Size.GRANDE);
 
         Beverage beverage1 = new HouseBlend();
+        beverage1.setSize(Beverage.Size.VENTI);
 
         beverage1 = new Mocha(beverage1);
         beverage1 = new Whip(beverage1);
